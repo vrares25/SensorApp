@@ -7,5 +7,7 @@ namespace sensors
 	public:
 		virtual ~ISensor() = default;
 		virtual bool IsMeasurementValid() const = 0;
+
+		virtual const std::string& GetTimestamp() const = 0;
 	};
 }

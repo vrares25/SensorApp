@@ -24,7 +24,7 @@ namespace sensors
 
 		std::uint16_t GetId() const;
 		SensorType GetType() const;
-		const std::string& GetTimestamp() const;
+		const std::string& GetTimestamp() const override;
 		virtual std::vector<float> GetValues() const = 0;
 		bool GetStatus() const;
 
